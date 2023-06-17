@@ -1,0 +1,11 @@
+version: '3.2'
+services:
+  app:
+    build: .
+    image: kcgeconciliador/rds-migration
+    tty: true
+    stdin_open: true
+    volumes:
+      - .:/usr/src/app
+    env_file:
+      - .env
