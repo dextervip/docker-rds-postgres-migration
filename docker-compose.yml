@@ -2,7 +2,7 @@ version: '3.2'
 services:
   app:
     build: .
-    image: kcgeconciliador/rds-migration
+    image: dextervip/rds-postgres-migration
     tty: true
     stdin_open: true
     volumes:
